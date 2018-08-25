@@ -1,0 +1,186 @@
+.portfolio-site-main {
+  width: calc(100% + 20px);
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.portfolio-page-header {
+  width: 100%;
+  float: none;
+  padding-bottom: 2em;
+}
+.portfolio-page-title {
+  color: #222;
+  font-weight: 600;
+}
+.portfolio-taxonomy-description {
+  color: #666;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.portfolio-entry-title {
+  line-height: 1.2;
+  padding: 0;
+  margin: 0 0 6px;
+  font-weight: 600;
+  color: #222;
+}
+.archive.post-type-archive-portfolio .portfolio-entry-title, .archive.tax-portfolio_category .portfolio-entry-title {
+  font-size: 20px;
+}
+.single-portfolio .portfolio-entry-title {
+  margin-bottom: 12px;
+}
+.portfolio-entry-title a {
+  color: #222;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-box-shadow 130ms ease-in-out;
+  transition: -webkit-box-shadow 130ms ease-in-out;
+  transition: box-shadow 130ms ease-in-out;
+  transition: box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+}
+.portfolio-entry-title a:hover {
+  color: #000;
+  -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 2px 0 black;
+          box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 2px 0 black;
+}
+.portfolio-categories {
+  margin: 10px 0 12px;
+}
+.portfolio-categories .portfolio-categories-link {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 5px;
+  margin: 5px 5px 0 0;
+  background-color: #ddd;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #000;
+}
+.portfolio-categories .portfolio-categories-link:hover {
+  opacity: 0.8;
+  color: #000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.portfolio-entry-header {
+  color: #000;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.single-portfolio .portfolio-entry-header {
+  margin-top: 20px;
+}
+.archive.post-type-archive-portfolio .portfolio-entry-header, .archive.tax-portfolio_category .portfolio-entry-header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  opacity: 0;
+}
+.archive.post-type-archive-portfolio .portfolio-entry-header p, .archive.tax-portfolio_category .portfolio-entry-header p {
+  background-color: #fff;
+  padding: 2px 5px;
+}
+.portfolio-entry-header p {
+  display: inline-block;
+  color: #000;
+  font-size: 12px;
+  margin: 5px 5px 0 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.portfolio-post-thumbnail a {
+  display: block;
+  -webkit-transition: opacity .1s;
+  transition: opacity .1s;
+}
+.portfolio-post-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.portfolio-entry-content P {
+  font-size: 14px;
+}
+.portfolio.type-portfolio {
+  width: 100%;
+}
+.portfolio.type-portfolio .wrap-top {
+  position: relative;
+}
+.portfolio.type-portfolio .wrap-top:hover .portfolio-post-thumbnail a {
+  opacity: 0.8;
+}
+.portfolio.type-portfolio .wrap-top:hover .portfolio-entry-header {
+  opacity: 1;
+}
+.archive.post-type-archive-portfolio .portfolio.type-portfolio, .archive.tax-portfolio_category .portfolio.type-portfolio {
+  padding: 10px;
+  float: none;
+  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .archive.post-type-archive-portfolio .portfolio.type-portfolio, .archive.tax-portfolio_category .portfolio.type-portfolio {
+    -ms-flex-preferred-size: 33.3333%;
+        flex-basis: 33.3333%;
+  }
+}
+
+.archive.post-type-archive-portfolio .navigation.pagination, .archive.tax-portfolio_category .navigation.pagination {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+  float: none;
+}
+
+.single-portfolio .navigation.post-navigation {
+  width: 100%;
+  float: none;
+}
+
+.archive.post-type-archive-portfolio .wrap, .archive.tax-portfolio_category .wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+@media screen and (min-width: 48em) {
+  .archive.post-type-archive-portfolio .wrap, .archive.tax-portfolio_category .wrap {
+    max-width: 1000px;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
+.single-portfolio .single-featured-image-header {
+  display: none;
+}
+
+.post-navigation div.nav-next,
+.post-navigation div.nav-previous {
+  background-image: none;
+}
+
+.nav-button {
+  font-size: 18px;
+}
+
+.admin-bar .fancybox-inner {
+  margin-top: 32px;
+}
+
+.hide {
+  display: none;
+}
