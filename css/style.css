@@ -78,22 +78,23 @@
 .single-portfolio .portfolio-entry-header {
   margin-top: 20px;
 }
-.archive.post-type-archive-portfolio .portfolio-entry-header, .archive.tax-portfolio_category .portfolio-entry-header {
+.archive.post-type-archive-portfolio .portfolio-entry-header:not(.portfolio-entry-header-static), .archive.tax-portfolio_category .portfolio-entry-header:not(.portfolio-entry-header-static) {
   position: absolute;
   top: 10px;
   left: 10px;
   z-index: 1;
   opacity: 0;
 }
-.archive.post-type-archive-portfolio .portfolio-entry-header p, .archive.tax-portfolio_category .portfolio-entry-header p {
+.archive.post-type-archive-portfolio .portfolio-entry-header:not(.portfolio-entry-header-static) p, .archive.tax-portfolio_category .portfolio-entry-header:not(.portfolio-entry-header-static) p {
   background-color: #fff;
   padding: 2px 5px;
+  margin: 0 5px 5px 0;
 }
 .portfolio-entry-header p {
   display: inline-block;
   color: #000;
   font-size: 12px;
-  margin: 5px 5px 0 0;
+  margin: 0 5px 0 0;
   -webkit-box-shadow: none;
           box-shadow: none;
 }

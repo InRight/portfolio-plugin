@@ -36,7 +36,7 @@ get_header(); ?>
 
 			<article id="portfolio-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="wrap-top">
-					<header class="portfolio-entry-header">
+					<header class="portfolio-entry-header<?php if ( '' == get_the_post_thumbnail() ) { echo ' portfolio-entry-header-static'; } ?>">
 						<?php
 						if ( 'portfolio' === get_post_type() ) {
 							echo '<div class="portfolio-entry-meta">';
@@ -65,14 +65,19 @@ get_header(); ?>
 						?>
 
 						<?php if ( get_post_meta( $post->ID, 'add_file_id', true ) == null ) : ?>
+							<?php if ( '' !== get_the_post_thumbnail() ) : ?>
 							<a href="<?php the_post_thumbnail_url( 'full' ); ?>" data-fancybox="gallery">
 								<?php the_post_thumbnail( 'portfolio-thumb' ); ?>
 							</a>
+							<?php endif; ?>
 						<?php elseif ( $file_format !== "audio/mpeg" ) : ?>
+							<?php if ( '' !== get_the_post_thumbnail() ) : ?>
 							<a href="<?php echo $add_file_link; ?>" data-fancybox="gallery">
 								<?php the_post_thumbnail( 'portfolio-thumb' ); ?>
 							</a>
+							<?php endif; ?>
 						<?php else : ?>
+							<?php if ( '' !== get_the_post_thumbnail() ) : ?>
 							<a href="#holder-<?php the_ID(); ?>" data-fancybox="gallery">
 								<?php the_post_thumbnail( 'portfolio-thumb' ); ?>
 							</a>
@@ -86,6 +91,7 @@ get_header(); ?>
 									</div>
 								</div>
 							</div>
+							<?php endif; ?>
 						<?php endif; ?>
 
 						</div><!-- .post-thumbnail -->
